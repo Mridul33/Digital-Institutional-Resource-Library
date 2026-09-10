@@ -1,28 +1,47 @@
 # Digital Institutional Resource Library
 
-A web-based academic resource management platform developed as a five-member
-team project at Manav Rachna University. The system was designed to help
-students and faculty upload, organise, search and manage institutional
-documents through role-based interfaces.
+A web-based academic resource management platform developed as a **five-member university team project** at Manav Rachna University.
 
-> This repository is maintained as a portfolio copy of the original team
-> project. My primary contribution was frontend development using React,
-> along with some database-related integration. The project was subsequently
-> continued and extended by junior students after I left the university.
+The platform was designed to help students, faculty members, and administrators upload, organise, search, manage, and retrieve academic documents through role-based interfaces.
 
-## Features
+> **Project context:** This repository is maintained as a portfolio copy of the original team project. My primary contribution was in **frontend development using React**, along with some involvement in **database-related integration and data handling**. The project was later continued and extended by junior students after my involvement ended.
 
-- User registration and authentication
-- Document upload and resource management
-- Search and filtering of academic documents
-- Faculty and administrator dashboards
-- Category and department management
-- User and group management
-- Document request and deletion workflows
+---
+
+## Overview
+
+The Digital Institutional Resource Library was created to provide a centralised system for managing institutional academic resources.
+
+Instead of relying on scattered files and manual document sharing, the application provides a structured interface where authorised users can access and manage resources based on their role.
+
+The project combines a modern React frontend with a Django-based backend and database functionality.
+
+---
+
+## Key Features
+
+The current codebase includes functionality for:
+
+- User registration and login
+- Role-based user access
+- Academic document upload and management
+- Document search and retrieval
+- Document editing
+- Categories and department management
+- Faculty resource management
+- Administrator dashboard functionality
+- User management
+- Group management
+- Document request workflows
+- Document deletion/request workflows
+- Authentication and protected application routes
+
+---
 
 ## Tech Stack
 
 ### Frontend
+
 - React
 - JavaScript
 - Vite
@@ -30,50 +49,86 @@ documents through role-based interfaces.
 - Redux Toolkit
 - React Router
 - Axios
+- Framer Motion
+- Font Awesome
+- Heroicons
 
 ### Backend
+
 - Python
 - Django
 - Django REST Framework
-- JWT authentication
+- Django REST Framework Simple JWT
+- Django CORS Headers
 
-### Database
+### Database / Data
+
 - MongoDB
-- SQLite for Django application data
+- PyMongo
+- Django application models
+- Pandas
+
+### Development Tools
+
+- Git
+- GitHub
+- VS Code
+- npm
+- REST APIs
+
+---
 
 ## My Contribution
 
-I worked primarily on the frontend of the application as part of the
-five-member development team.
+I worked primarily on the **frontend development** of the project as part of the original five-member team.
 
-My contributions included:
+My involvement included:
 
 - Developing and supporting React-based user interfaces
-- Working on frontend navigation and application workflows
-- Integrating frontend components with backend APIs
+- Working on frontend pages and navigation flows
+- Supporting integration between frontend components and backend APIs
 - Contributing to database-related integration and data handling
-- Collaborating with the wider team on feature implementation and testing
+- Working with the team to translate project requirements into application features
+- Supporting testing and integration of frontend functionality
 
-The codebase was later continued and extended by junior students, so some
-features in the current repository were developed after my involvement.
+Because the project was later continued by junior students, the current repository contains functionality that may have been added or modified after my involvement.
 
-## Project Architecture
+I therefore only claim responsibility for the areas I personally contributed to.
 
-Frontend (React)
-        |
-        | REST API
-        v
-Backend (Django / Django REST Framework)
-        |
-        +---- MongoDB
-        |
-        +---- SQLite / Django models
+---
 
-## Running Locally
+## Application Structure
 
-### Frontend
+The project follows a frontend/backend architecture:
 
-```bash
-cd frontend
-npm install
-npm run dev
+```text
+Digital-Institutional-Resource-Library
+│
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│   └── package.json
+│
+├── repository/
+│   ├── library/
+│   │   ├── databases/
+│   │   ├── migrations/
+│   │   ├── models.py
+│   │   ├── serializers.py
+│   │   ├── permissions.py
+│   │   ├── tasks.py
+│   │   ├── urls.py
+│   │   └── views.py
+│   │
+│   ├── repository/
+│   │   ├── settings.py
+│   │   ├── urls.py
+│   │   ├── asgi.py
+│   │   └── wsgi.py
+│   │
+│   └── manage.py
+│
+└── README.md
