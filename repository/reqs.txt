@@ -1,0 +1,8 @@
+django
+django-rest-framework
+django-background-tasks
+pandas
+pymongo
+djangorestframework-simplejwt
+django-cors-headers
+
