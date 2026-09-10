@@ -1,27 +1,79 @@
-# Library resource management repository.
+# Digital Institutional Resource Library
 
-## Steps to run-
+A web-based academic resource management platform developed as a five-member
+team project at Manav Rachna University. The system was designed to help
+students and faculty upload, organise, search and manage institutional
+documents through role-based interfaces.
 
-### Configure frontend (all commands need to be run in frontend directory) :
+> This repository is maintained as a portfolio copy of the original team
+> project. My primary contribution was frontend development using React,
+> along with some database-related integration. The project was subsequently
+> continued and extended by junior students after I left the university.
 
-    1. Download and install Node for your system
-    2. Run the below commands to install dependencies
-       first move into the frontend folder and install dependecies
-       npm install
-       npm i tailwindcss vite axios react-router-dom react-icons postcss autoprefixer
-       npx tailwindcss init -p
-       npm i @reduxjs/toolkit react-redux
-    3. npm install react-typed --save
-    for icons:
-    npm install @fortawesome/fontawesome-svg-core
-    npm install @fortawesome/free-brands-svg-icons  // For brand icons (Instagram, etc.)
-    npm install @fortawesome/free-solid-svg-icons   // For solid icons (if you need any)
-    npm install @fortawesome/free-regular-svg-icons // For regular icons (if you need any)
-    npm install @fortawesome/react-fontawesome
-    3. To run the project run ~$ npm run dev
+## Features
 
-### Configure Backend (all command nneeds to be run in repository directory) :
-    1. Install Python on your system
-    2. Install the dependecies from requirements.txt file
-        pip3 install -r requirements.txt
-    3. To run the server run ~$ python3 manage.py runserver
+- User registration and authentication
+- Document upload and resource management
+- Search and filtering of academic documents
+- Faculty and administrator dashboards
+- Category and department management
+- User and group management
+- Document request and deletion workflows
+
+## Tech Stack
+
+### Frontend
+- React
+- JavaScript
+- Vite
+- Tailwind CSS
+- Redux Toolkit
+- React Router
+- Axios
+
+### Backend
+- Python
+- Django
+- Django REST Framework
+- JWT authentication
+
+### Database
+- MongoDB
+- SQLite for Django application data
+
+## My Contribution
+
+I worked primarily on the frontend of the application as part of the
+five-member development team.
+
+My contributions included:
+
+- Developing and supporting React-based user interfaces
+- Working on frontend navigation and application workflows
+- Integrating frontend components with backend APIs
+- Contributing to database-related integration and data handling
+- Collaborating with the wider team on feature implementation and testing
+
+The codebase was later continued and extended by junior students, so some
+features in the current repository were developed after my involvement.
+
+## Project Architecture
+
+Frontend (React)
+        |
+        | REST API
+        v
+Backend (Django / Django REST Framework)
+        |
+        +---- MongoDB
+        |
+        +---- SQLite / Django models
+
+## Running Locally
+
+### Frontend
+
+```bash
+cd frontend
+npm install
+npm run dev
